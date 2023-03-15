@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orlemann Designs</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <br><br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./media/Typing.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Heather Orlemann's Portfolio</h1>
+            <br><br><br>
+            <div class="quote center">
+                <strong>
+                    "You might not think that programmers are artists,<br>
+                    but programming is an extremely creative profession.<br>
+                    It's logic-based creativity."<br><br>
+                    - John Romero
+                </strong>
+            </div>                    
+            <br><br><br><br>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <div class="Column_2 Column_tall">
+                <br><br>
+                <img src="./media/heather.jpg" alt="Photo of web developer">
+            </div>
+            <!--Right column-->
+            <div class="Column_1 Column_tall">
+                <br>
+                <h1>About</h1>
+                <p>
+                    I am a creative, skilled in graphic design and web development! I am trained and experienced in the following languages: HTML, CSS, JavaScript and more. I am also fluent in English Spanish with working knowledge of French.<br><br>
+                    I take immense pleasure in spending quality time with my family, regularly hiking alongside my loyal doggo, and exploring the wonders of our world through engaging and culturally-enriching travel experiences.<br><br>
+                    I love to code and design stuff and would love to work with you on your project. 
+                </p>
+                <div class="center">
+                    <p><a href="#Contact">Contact</a> me below!</p>
+                </div>             
+                <br><br>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <div class="Column_1 Column_tall">
+                <h1>GitHub</h1>
+                <br>
+                <p>You can view my coding projects on my GitHub profile here:</p>
+                <br>
+                <p class="center"><a href="https://github.com/Heather-Angela1" target="_blank">Heather-Angela1</a></p>
+            </div>
+            <div class="Column_2 Column_tall">
+                <br><br>
+                <a href="https://github.com/Heather-Angela1" target="_blank"><img src="./media/github.jpg" alt="Explore Github Graphic"></a>
+            </div>
+        </div>
+    
+        <!--Contact section-->
+        <div class="Row" id="Contact">            
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <br><br>
+                <img src="./media/Contact.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <br>
+                <form action="https://formspree.io/f/xayzblgo" method="POST">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <br><br><br>
+            <p class="center">&copy; Orlemann Designs Inc.</p>
+            <br>
+        </footer>
+    </body>
+</html>
