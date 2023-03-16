@@ -208,11 +208,11 @@ footer {
 /***** VIDEO STYLING *****/
 /* Formatting for background video */
 #Typing_Video {
-  position: fixed; /* This fixes the video to the page */
-  right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-  bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
-  min-width: 100%; /* This ensures the video is displayed across the full width of the page */
-  z-index: -1; /* This places the video behind the other elements on the page */
+  position: fixed; 
+  right: 0; 
+  bottom: 0; 
+  min-width: 100%; 
+  z-index: -1; 
 }
 
 /* Screens that are 576px and smaller will not display the background video */
@@ -224,11 +224,11 @@ footer {
 
 /* Texts over the video */
 .Video_Text {
-  background: rgba(58, 0, 105, 0.384); /* This provides a semi-transparent background for the text to sit over */
-  color: white; /* Makes the font color white */
-  width: 100%; /* Ensures the video-text container fills the width of the video */
-  padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
-  position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+  background: rgba(58, 0, 105, 0.384); 
+  color: white; 
+  width: 100%; 
+  padding: 20px; 
+  position: relative; 
   -webkit-animation: moveVideoText 5.75s;
   animation: moveVideoText 5.75s;
 }
@@ -242,16 +242,16 @@ footer {
 
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-  box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
+  box-sizing: border-box; 
 } 
 
 .Column_1 {
   float: left;
-  width: 50%; /* This ensures the column takes up half of the page width */
+  width: 50%; 
   padding: 10px;
-  padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-  height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-  background-color: #ffffff; /* Sets the background color of the columns with class Column_1 */
+  padding-top: 3%; 
+  height: 400px; 
+  background-color: #ffffff; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +327,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: white; /* Turns the background of the submit button white when the user hovers over it */
   color: black; /* Turns the font black when hovered over */
-  transform: scale(1.3); /* Makes the button increase 1.5 times in size */
+  transform: scale(1.2); /* Makes the button increase 1.5 times in size */
   transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
 }
 
