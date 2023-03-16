@@ -120,7 +120,7 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
   overflow: hidden; 
-  background-color:  rgb(58, 0, 105); 
+  background-color: rgb(58, 0, 105); 
   position: fixed; 
   top: 0; 
   width: 100%; 
@@ -326,7 +326,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: white; /* Turns the background of the submit button white when the user hovers over it */
   color: black; /* Turns the font black when hovered over */
-  transform: scale(1.3); /* Makes the button increase 1.5 times in size */
+  transform: scale(1.5); /* Makes the button increase 1.5 times in size */
   transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
 }
 
