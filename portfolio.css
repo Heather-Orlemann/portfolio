@@ -7,6 +7,7 @@ body {
 /* Heading 1 elements */
 h1 {
   text-transform: uppercase; 
+  font-size: 2vw;
   font-family: Roboto Mono, "Trebuchet MS", Optima; 
   text-align: center; 
   margin-top: 3%;
@@ -28,11 +29,11 @@ h1:hover {
 
 /* Paragraph elements */
 p {
+  font-size: 1vw;
   font-family: Roboto Mono, Rockwell Extra Bold;
   color: rgb(58, 0, 105);
   text-align: justify;
   letter-spacing: .5px; 
-  font-size: 18px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -65,7 +66,7 @@ a {
   font-family: Roboto Mono, Rockwell Extra Bold;
   color: rgb(58, 0, 105);
   letter-spacing: .5px; 
-  font-size: 18px;
+  font-size: 1vw;
   padding-left: 25px;
   padding-right: 25px;
   font-style: italic;
