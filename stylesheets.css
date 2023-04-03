@@ -342,8 +342,8 @@ footer {
 /***** End of Table Styling *****/
 
 /***** Contact Form Styling *****/
-/* Button used to open the contact form - fixed at the bottom of the page */
-.Pop_Up_Button {
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .Pop_Up_Button {
   position: fixed;
   bottom: 1.75vw;
   right: 1.75vw;
