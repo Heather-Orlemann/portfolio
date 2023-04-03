@@ -268,7 +268,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-family: Perpetua, Rockwell Extra Bold;
+  font-family: Roboto Mono, "Trebuchet MS", Optima;
   letter-spacing: .1vw;
   font-size: 1.5vw;
   background-color: rgba(57, 0, 127, 0.788);
@@ -371,6 +371,8 @@ footer {
   
   /* Styling for the contact form */
   .form-popup {
+  font-family: Roboto Mono, "Trebuchet MS", Optima;
+  color: rgb(58, 0, 127);
   z-index: 8;
   display: none;
   position: fixed;
@@ -387,6 +389,8 @@ footer {
   
   /* Input fields */
   .form-container input[type=text] {
+  font-family: Roboto Mono, "Trebuchet MS", Optima;
+  color: rgb(58, 0, 127);
   width: 100%;
   padding: .93vw;
   margin: .6vw 0 .6vw 0;
@@ -397,7 +401,8 @@ footer {
   
   /* General styling for all buttons */
   button {
-  font-family: "Trebuchet MS", Optima;
+  font-family: Roboto Mono, "Trebuchet MS", Optima;
+  color: rgb(58, 0, 127);
   letter-spacing: .3vw;
   font-size: 1.5vw;
   font-weight: bold;
