@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Orlemann Designs</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets.css">
+    <link rel="shortcut icon" type="img/jpg" href="./media/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
-        </div>
+<body class="Background">
+    <!-- Navbar -->
+    <nav class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </nav>
         <br><br>
 
         <!--Background video-->
@@ -34,31 +33,82 @@
         <div class="Video_Text">
             <h1 class="white-text">Heather Orlemann's Portfolio</h1>
             <br><br><br>
-            <div class="quote center">
-                <strong>
-                    "You might not think that programmers are artists,<br>
+            <div class=" center">
+                <strong><q>
+                    You might not think that programmers are artists,<br>
                     but programming is an extremely creative profession.<br>
-                    It's logic-based creativity."<br><br>
+                    It's logic-based creativity.</q><br><br>
                     - John Romero
                 </strong>
             </div>                    
             <br><br><br><br>
         </div>
 
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/heather.jpg" alt="Picture of yourself">
+                        <div class="text">Hello, I'd love to hear about your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/Languages.png" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/boot_react_j.png" alt="Bootstrap, jQuery and React Logos">
+                        <div class="text">along with Bootstrap, React & jQuery.</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/design.png" alt="Desk with laptop displaying the words LOGO"> 
+                        <div class="text"> I am also an experienced Graphic Designer!</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./media/coding.png" alt="Coding laptop"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Connect with me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
         <!--About section-->
         <div class="Row" id="About">
-            <div class="Column_2 Column_tall">
-                <br><br>
-                <img src="./media/heather.jpg" alt="Photo of web developer">
+            <div class="Column_2">
+                <a href="https://github.com/Heather-Angela1" target="_blank"><img src="./media/github.jpg" alt="Explore Github Graphic"></a>
+
             </div>
             <!--Right column-->
-            <div class="Column_1 Column_tall">
-                <br>
+            <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a creative, skilled in graphic design and web development! I am trained and experienced in the following languages: HTML, CSS, JavaScript and more. I am also fluent in English Spanish with working knowledge of French.<br><br>
-                    I take immense pleasure in spending quality time with my family, regularly hiking alongside my loyal doggo, and exploring the wonders of our world through engaging and culturally-enriching travel experiences.<br><br>
-                    I love to code and design stuff and would love to work with you on your project. 
+                    I am a creative professional skilled in graphic design and web development. My experience includes proficiency in HTML, CSS, JavaScript, and other programming languages and frameworks.
+                    Additionally, I am fluent in English and Spanish and possess working knowledge of French. I enjoy spending quality time with my family, hiking with my dog, and culturally-enriching travel experiences.
+                    I am passionate about coding and design and would be thrilled to collaborate with you on your project.
                 </p>
                 <div class="center">
                     <p><a href="#Contact">Contact</a> me below!</p>
@@ -69,41 +119,38 @@
 
         <!--GitHub section-->
         <div class="Row" id="GitHub">
-            <div class="Column_1 Column_tall">
+            <div class="Column_1">
                 <h1>GitHub</h1>
                 <br>
-                <p>You can view my coding projects on my GitHub profile here:</p>
+                <p>You can view my coding projects here:</p>
                 <br>
                 <p class="center"><a href="https://github.com/Heather-Angela1" target="_blank">Heather-Angela1</a></p>
             </div>
-            <div class="Column_2 Column_tall">
-                <br><br>
-                <a href="https://github.com/Heather-Angela1" target="_blank"><img src="./media/github.jpg" alt="Explore Github Graphic"></a>
+            <div class="Column_2">
+                <img src="./media/Contact.png" alt="Purple and blue glowing dice with email and phone icons" onclick="toggleForm()" ondblclick="toggleForm()">
             </div>
         </div>
     
-        <!--Contact section-->
-        <div class="Row" id="Contact">            
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <br><br>
-                <img src="./media/Contact.png" alt="Contact_Image">
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/xayzblgo" method="POST" class="form-container"> 
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" id="name" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" id="phone" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" id="email" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" id="message" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
             </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <br>
-                <form action="https://formspree.io/f/xayzblgo" method="POST">
-                    <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                    <input type="submit" value="SUBMIT">
-                </form>
-            </div>
-        </div>
+         </div>
 
         <!--Footer section-->
         <footer>
@@ -111,5 +158,6 @@
             <p class="center">&copy; Orlemann Designs Inc.</p>
             <br>
         </footer>
-    </body>
+    <script src="main.js"></script>
+</body>
 </html>
