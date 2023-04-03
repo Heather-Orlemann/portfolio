@@ -41,6 +41,7 @@ h1:hover {
 
 /* This is used to change the color of the Portfolio Title text */
 .white-text {
+  margin-bottom: 1.5em;
   color: #fff;
   padding-top: 10vh;
 }
@@ -64,6 +65,7 @@ p:hover {
 
 /* This applies to all centered text */
 .center {
+  margin-top: 1.5em;
   text-align: center;
 }
 
