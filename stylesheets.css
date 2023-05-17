@@ -415,7 +415,7 @@ footer {
   /* Hover effect for contact and submit buttons */
   button:hover, .form-container .btn:hover {
   color: white;
-  background-color:  rgb(58, 0, 127);
+  background-color:  grey;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
