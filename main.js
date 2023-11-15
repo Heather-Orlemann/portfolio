@@ -1,26 +1,30 @@
 // Add event listeners for navbar items
 function addNavListeners() {
-    document.getElementById("navHome").addEventListener("click", function () {
-      window.location.href = "#Home";
-    });
-  
-    document.getElementById("navSlideshow").addEventListener("click", function () {
-      window.location.href = "#Slideshow";
-    });
-  
-    document.getElementById("navAbout").addEventListener("click", function () {
-      window.location.href = "#About";
-    });
-  
-    document.getElementById("navGithub").addEventListener("click", function () {
-      window.location.href = "#GitHub";
-    });
-  
-    document.getElementById("navContact").addEventListener("click", function () {
-      toggleForm();
-    });
-  }
-  
+  document.getElementById("navHome").addEventListener("click", function () {
+    navigateTo("#Home");
+  });
+
+  document.getElementById("navSlideshow").addEventListener("click", function () {
+    navigateTo("#Slideshow");
+  });
+
+  document.getElementById("navAbout").addEventListener("click", function () {
+    navigateTo("#About");
+  });
+
+  document.getElementById("navGithub").addEventListener("click", function () {
+    navigateTo("#GitHub");
+  });
+
+  document.getElementById("navContact").addEventListener("click", function () {
+    toggleForm();
+  });
+}
+
+// Function to navigate to a section
+function navigateTo(section) {
+  window.location.href = section;
+}
   // Toggle the contact form visibility
   function toggleForm() {
     const form = document.getElementById("myForm");
