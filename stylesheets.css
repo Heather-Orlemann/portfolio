@@ -162,7 +162,7 @@ footer {
 
 /* Active navbar link */
 .Navbar a.active {
-  background-color: darkgray;
+  background-color: lightseagreen;
 }
 
 /* Hamburger menu icon */
