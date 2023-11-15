@@ -29,7 +29,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-top: 3%;
-  color: rgb(205,217,197);
+  color: lightseagreen;
 }
 
 /* When the h1 elements are hovered over they increase in size by 1.1 */
@@ -414,8 +414,8 @@ footer {
   
   /* Hover effect for contact and submit buttons */
   button:hover, .form-container .btn:hover {
-  color: rgb(57,56,49);
-  background-color: rgb(205,217,197);
+  color: white;
+  background-color: lightseagreen;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
