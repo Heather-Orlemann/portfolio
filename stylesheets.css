@@ -29,7 +29,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-top: 3%;
-  color: rgb(57,56,49);
+  color: rgb(205,217,197);
 }
 
 /* When the h1 elements are hovered over they increase in size by 1.1 */
@@ -42,7 +42,7 @@ h1:hover {
 /* This is used to change the color of the Portfolio Title text */
 .white-text {
   margin-bottom: 1.5em;
-  color: #fff;
+  color: white;
   padding-top: 10vh;
 }
 
@@ -77,7 +77,7 @@ p:hover {
 
 /* This ensures all links are blue, underlined, and change the mouse to a pointer when hovered over or clicked */
 a {
-  color: blue;
+  color: lightseagreen;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -291,7 +291,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-  background-color: rgb(184,174,168);
+  background-color: lightseagreen;
 }
 
 /* Fading animation for slideshow */
@@ -325,7 +325,7 @@ footer {
   width: 50%;
   padding: 1.6%;
   height: 450px;
-  background-color: #f2f2f2;
+  background-color: white;
 }
   
   .Column_2 {
