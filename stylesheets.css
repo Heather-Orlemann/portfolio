@@ -335,6 +335,20 @@ footer {
   height: 450px;
   background-color: rgb(184,174,168);
 }
+  .Column_3 {
+  float: left;
+  width: 100%;
+  padding: 8%;
+  height: 900px;
+  background-color: white;
+}
+  .Column_4 {
+  float: left;
+  width: 100%;
+  padding: 8%;
+  height: 900px;
+  background-color: rgb(184,174,168);
+}
   
   .Row:after {
   content: "";
