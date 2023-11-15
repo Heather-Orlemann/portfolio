@@ -12,7 +12,7 @@ body {
   opacity: 1;
   transition: 3s opacity;
   letter-spacing: 0.2vw;
-  font-family: Roboto Mono, Avant Garde, Helvetica;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5vw;
   overflow-x: hidden;
   user-select: none;
@@ -26,10 +26,10 @@ body.fade-out {
 /*capitalizing all h1 headings */
 h1 {
   text-transform: uppercase;
-  font-family: Roboto Mono, "Trebuchet MS", Optima;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-top: 3%;
-  color: rgb(58, 0, 105);
+  color: rgb(57,56,49);
 }
 
 /* When the h1 elements are hovered over they increase in size by 1.1 */
@@ -48,8 +48,8 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-  font-family: Roboto Mono, Perpetua, Rockwell Extra Bold;
-  color:  rgb(58, 0, 127);
+  font-family: 'Raleway', sans-serif;
+  color: rgb(57,56,49);
   text-align: Center;
   letter-spacing: 0.1vw;
   font-size: 2vw;
@@ -115,7 +115,7 @@ footer {
 /***** Navbar Styling *****/
 .Navbar {
   overflow: hidden;
-  background-color: rgb(58, 0, 127);
+  background-color: rgb(184,174,168);
   position: fixed;
   top: 0;
   width: 100%;
@@ -137,7 +137,7 @@ footer {
   color: white;
   padding: 0.75vw 1vw;
   text-decoration: none;
-  font-family: Roboto Mono, Avant Garde, Helvetica;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5vw;
   text-align: center;
   position: relative;
@@ -154,7 +154,7 @@ footer {
 /* Navbar hover effects */
 .Navbar a:hover {
   background-color: white;
-  color:  rgb(58, 0, 127);
+  color: rgb(57,56,49);
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s ease-in;
@@ -204,7 +204,7 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .mySlides{
@@ -268,10 +268,10 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-family: Roboto Mono, "Trebuchet MS", Optima;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: .1vw;
   font-size: 1.5vw;
-  background-color: rgba(57, 0, 127, 0.788);
+  background-color: rgb(184,174,168);
   font-weight: bold;
   border-radius: 0px 0px 7px 7px;
 }
@@ -291,7 +291,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-  background-color:   rgb(58, 0, 127);
+  background-color: rgb(184,174,168);
 }
 
 /* Fading animation for slideshow */
@@ -333,7 +333,7 @@ footer {
   width: 50%;
   padding: 1.6%;
   height: 450px;
-  background-color: rgb(58, 0, 127);
+  background-color: rgb(184,174,168);
 }
   
   .Row:after {
@@ -351,8 +351,8 @@ footer {
   right: 1.75vw;
   width: 25vw;
   background-color: white;
-  color:  rgb(58, 0, 127);
-  border: solid  rgb(58, 0, 127);
+  color:  rgb(184,174,168);
+  border: solid  rgb(184,174,168);
   cursor: pointer;
   -webkit-animation: movePopup 5s;
   animation: movePopup 5s;
@@ -371,8 +371,8 @@ footer {
   
   /* Styling for the contact form */
   .form-popup {
-  font-family: Roboto Mono, "Trebuchet MS", Optima;
-  color: rgb(58, 0, 127);
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(184,174,168);
   z-index: 8;
   display: none;
   position: fixed;
@@ -389,8 +389,8 @@ footer {
   
   /* Input fields */
   .form-container input[type=text] {
-  font-family: Roboto Mono, "Trebuchet MS", Optima;
-  color: rgb(58, 0, 127);
+  font-family: 'Raleway', sans-serif;  
+  color: rgb(57,56,49);
   width: 100%;
   padding: .93vw;
   margin: .6vw 0 .6vw 0;
@@ -401,8 +401,8 @@ footer {
   
   /* General styling for all buttons */
   button {
-  font-family: Roboto Mono, "Trebuchet MS", Optima;
-  color: rgb(58, 0, 127);
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(184,174,168);
   letter-spacing: .3vw;
   font-size: 1.5vw;
   font-weight: bold;
@@ -414,8 +414,8 @@ footer {
   
   /* Hover effect for contact and submit buttons */
   button:hover, .form-container .btn:hover {
-  color: white;
-  background-color:  grey;
+  color: rgb(57,56,49);
+  background-color: rgb(205,217,197);
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
@@ -424,14 +424,14 @@ footer {
   /* Submit button */
   .form-container .btn {
   background-color: white;
-  color:  rgb(58, 0, 127);
-  border-color:  rgb(58, 0, 127);
+  color:  rgb(184,174,168);
+  border-color:  rgb(184,174,168);
   margin-bottom: 1vh;
   }
   
   /* Close button */
   .form-container .cancel {
-  background-color:  rgb(58, 0, 127);
+  background-color:  rgb(184,174,168);
   color: white;
   border-color: gray;
   }
@@ -439,10 +439,10 @@ footer {
   /* Styling for close button on hover */
   .form-container .cancel:hover {
   color: white;
-  background-color: darkred;
+  background-color: rgb(57,56,49);
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
-  border-color: rgb(58, 0, 127);
+  border-color: rgb(184,174,168);
   }
 /***** End of Contact Form Styling *****/
 
