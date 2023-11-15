@@ -165,38 +165,6 @@ footer {
   background-color: lightseagreen;
 }
 
-/* Hamburger menu icon */
-.Navbar-toggler {
-  display: none;
-  font-size: 1.5vw;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 1vw;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.Navbar-toggler:hover {
-  color: lightgray;
-}
-
-/* Show the hamburger menu icon on smaller screens */
-@media only screen and (max-width: 768px) {
-  .Navbar a {
-    display: none;
-  }
-
-  .Navbar-toggler {
-    display: block;
-  }
-
-  .Navbar.active a {
-    display: block;
-  }
-}
-
 /***** End of Navbar Styling *****/
 
 /***** Video Styling *****/
