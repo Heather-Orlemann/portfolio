@@ -12,7 +12,7 @@ function addNavListeners() {
       window.location.href = "#About";
     });
   
-    document.getElementById("navGithub").addEventListener("click", function () {
+    document.getElementById("navGitH0ub").addEventListener("click", function () {
       window.location.href = "#GitHub";
     });
   
