@@ -72,9 +72,8 @@ p:hover {
 
 /* This ensures all links are blue, underlined, and change the mouse to a pointer when hovered over or clicked */
 a {
-  color: lightseagreen;
+  color: white;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 /* Quotation elements */
