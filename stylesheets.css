@@ -28,16 +28,11 @@ h1 {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 0;
   color: lightseagreen;
+  font-size: .75em; 
 }
 
-/* When the h1 elements are hovered over they increase in size by 1.1 */
-h1:hover {
-  filter: grayscale(5%);
-  transform: scale(1.15);
-  transition: transform 1s;
-}
 
 /* This is used to change the color of the Portfolio Title text */
 .white-text {
@@ -65,7 +60,7 @@ p:hover {
 
 /* This applies to all centered text */
 .center {
-  margin-top: 1.5em;
+  margin-top: 2em;
   text-align: center;
 }
 
@@ -112,60 +107,6 @@ footer {
 
 /***** End of General Styling *****/
 
-/***** Navbar Styling *****/
-.Navbar {
-  overflow: hidden;
-  background-color: rgb(184,174,168);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  -webkit-animation: moveNav 5s;
-  animation: moveNav 5s;
-}
-
-/* Animation for moving the nav bar from left to right */
-@keyframes moveNav {
-  from {left: -100vw;}
-  to {left: 0vw;}
-}
-
-/* Navbar links */
-.Navbar a {
-  float: left;
-  display: block;
-  color: white;
-  padding: 0.75vw 1vw;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5vw;
-  text-align: center;
-  position: relative;
-  -webkit-animation: moveNavText 5.75s;
-  animation: moveNavText 5.75s;
-}
-
-/* Animation for moving the navbar links from top to bottom */
-@keyframes moveNavText {
-  from {top: -100vw;}
-  to {top: 0vw;}
-}
-
-/* Navbar hover effects */
-.Navbar a:hover {
-  background-color: white;
-  color: rgb(57,56,49);
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.5s ease-in;
-}
-
-/* Active navbar link */
-.Navbar a.active {
-  background-color: lightseagreen;
-}
-
-/***** End of Navbar Styling *****/
 
 /***** Video Styling *****/
 #Typing_Video {
@@ -184,16 +125,22 @@ footer {
 }
 
 /* Text over the video */
+.Video_Text .Logo {
+  float: left;
+  margin-right: 10px; /* Adjust margin as needed for spacing */
+}
+
 .Video_Text {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   width: 100%;
   height: 100vh;
-  padding-top: 2vh;
+  padding-top: .5vh;
   position: relative;
   -webkit-animation: moveVideoText 5.75s;
   animation: moveVideoText 5.75s;
 }
+
 
 /* Animation for moving the video text from bottom to top */
 @keyframes moveVideoText {
@@ -202,155 +149,27 @@ footer {
 }
 /***** End of Video Styling *****/
 
-/***** Slideshow Styling *****/
-#Slideshow_Background {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.mySlides{
-  display: none;
-}
-
-/* Slideshow section / container */
-#Slideshow_Container {
-  width: 39.5vw;
-  height: auto;
-  padding-top: 4%;
-  position: relative;
-  margin:auto;
-}
-
-/* Remove the underline from the previous and next buttons on the slideshow */
-#Slideshow_Container a {
-  text-decoration: none;
-}
-
-/* Images contained within the slideshow */
-.Slideshow_Images {
-  vertical-align: middle;
-  height: auto;
-  box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
-  width: 100%;
-}
-
-/* Next and previous buttons */
-.Previous, .Next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 2vw;
-  color: darkgray; 
-  font-weight: bold;
-  font-size: 1.5vw;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  transition: 0.6s ease;
-}
-
-/* Positioning the next button on the right hand side */
-.Next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Hover effect on slide show buttons */
-.Previous:hover, .Next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-/* Slideshow text */
-.text {
-  color: white; 
-  padding: 1vw;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .1vw;
-  font-size: 1.5vw;
-  background-color: rgb(184,174,168);
-  font-weight: bold;
-  border-radius: 0px 0px 7px 7px;
-}
-
-/* Styling of the dots under the slideshow */
-.dot {
-  cursor: pointer;
-  height: 1vw;
-  width: 1vw;
-  margin: .25vw;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  z-index: 1;
-}
-
-/* Hover effect for slideshow dots */
-.active, .dot:hover {
-  background-color: lightseagreen;
-}
-
-/* Fading animation for slideshow */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4;}
-  to {opacity: 1;}
-}
-
-@keyframes fade {
-  from {opacity: .4;}
-  to {opacity: 1;}
-}
-
-/***** End Slideshow Styling *****/
-/* This inserts something after the content of selected elements (in this case the elements with class "Row") */
-
-
 /***** Table Styling -  this section covers the styling of the columns and rows within the table *****/
 * {
   box-sizing: border-box;
 }
-  .Column_1 {
-  float: left;
+.Column_1, .Column_2 {
   width: 50%;
   padding: 1.6%;
   height: 450px;
+}
+
+.Column_1 {
+  float: left;
   background-color: white;
 }
-  
-  .Column_2 {
+
+.Column_2 {
   float: right;
-  width: 50%;
-  padding: 1.6%;
-  height: 450px;
-  background-color: rgb(184,174,168);
-}
-  .Column_3 {
-  float: left;
-  width: 100%;
-  padding: 8%;
-  height: 900px;
   background-color: white;
 }
-  .Column_4 {
-  float: left;
-  width: 100%;
-  padding: 8%;
-  height: 900px;
-  background-color: rgb(184,174,168);
-}
-  
-  .Row:after {
+
+.Row:after {
   content: "";
   display: table;
   clear: both;
