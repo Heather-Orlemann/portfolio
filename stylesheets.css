@@ -29,7 +29,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin-top: 0;
-  color: lightseagreen;
+  color: rgb(255, 255, 255);
   font-size: .75em; 
 }
 
@@ -44,7 +44,7 @@ h1 {
 /* Paragraph elements */
 p {
   font-family: 'Raleway', sans-serif;
-  color: rgb(57,56,49);
+  color: rgb(154,162,151);
   text-align: Center;
   letter-spacing: 0.1vw;
   font-size: 2vw;
@@ -70,7 +70,7 @@ p:hover {
   transform: scale(1.1);
 }
 
-/* This ensures all links are blue, underlined, and change the mouse to a pointer when hovered over or clicked */
+/* This ensures all links are white, and change the mouse to a pointer when hovered over or clicked */
 a {
   color: white;
   cursor: pointer;
@@ -183,8 +183,8 @@ footer {
   right: 1.75vw;
   width: 25vw;
   background-color: white;
-  color:  rgb(184,174,168);
-  border: solid  rgb(184,174,168);
+  color:  rgb(154,162,151);
+  border: solid  rgb(154,162,151);
   cursor: pointer;
   -webkit-animation: movePopup 5s;
   animation: movePopup 5s;
@@ -204,7 +204,7 @@ footer {
   /* Styling for the contact form */
   .form-popup {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(184,174,168);
+  color: white;
   z-index: 8;
   display: none;
   position: fixed;
@@ -216,25 +216,25 @@ footer {
   .form-container {
   max-width: 49vw;
   padding: 1vw;
-  background-color: white;
+  background-color: silver;
   }
   
   /* Input fields */
   .form-container input[type=text] {
   font-family: 'Raleway', sans-serif;  
-  color: rgb(57,56,49);
+  color: rgb(50, 49, 57);
   width: 100%;
   padding: .93vw;
   margin: .6vw 0 .6vw 0;
   border: none;
-  background: Gainsboro;
+  background: white;
   font-size: 1vw;
   }
   
   /* General styling for all buttons */
   button {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(184,174,168);
+  color: rgb(154,162,151);
   letter-spacing: .3vw;
   font-size: 1.5vw;
   font-weight: bold;
@@ -247,7 +247,7 @@ footer {
   /* Hover effect for contact and submit buttons */
   button:hover, .form-container .btn:hover {
   color: white;
-  background-color: lightseagreen;
+  background-color: rgb(29, 119, 29);
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
@@ -256,14 +256,14 @@ footer {
   /* Submit button */
   .form-container .btn {
   background-color: white;
-  color:  rgb(184,174,168);
-  border-color:  rgb(184,174,168);
+  color:  rgb(154,162,151);
+  border-color:  rgb(154,162,151);
   margin-bottom: 1vh;
   }
   
   /* Close button */
   .form-container .cancel {
-  background-color:  rgb(184,174,168);
+  background-color: silver;
   color: white;
   border-color: gray;
   }
@@ -271,7 +271,7 @@ footer {
   /* Styling for close button on hover */
   .form-container .cancel:hover {
   color: white;
-  background-color: rgb(57,56,49);
+  background-color: rgb(119, 29, 119);
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: rgb(184,174,168);
@@ -332,15 +332,6 @@ footer {
 @media screen and (min-width: 2270px) {
   p {
       font-size: 1.0125vw;
-  }
-}
-
-/*Media rule for navbar links for different screen sizes*/
-/* Screens 1080px and smaller will display navbar links equally distributed */
-@media screen and (max-width: 1080px) {
-  .Navbar a{
-      width: 20%; /* This sets each navbar link to 1/5 of the navbar */
-      font-size: 2.5vw;
   }
 }
 
