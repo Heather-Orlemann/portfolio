@@ -5,69 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Heather Orlemann</title>
     <link rel="stylesheet" type="text/css" href="stylesheets.css">
-    <link rel="shortcut icon" type="img/jpg" href="./media/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./media/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@200;400&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+</head>
 <body class="Background">
 
-        <!--Background video-->
-        <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
-                <source src="./media/Typing.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="./media/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <img class="Logo" src="./media/onda.png" alt="Onda Designs Logo">
+        <h1 class="white-text">heather orlemann</h1><br>
+        <div class="center"><a href="#footer">graphic design + web development</a><br><br>Reach out for a quote.</div>
+        <br><br><br><br><br><br><br>
+        <a href="#Contact" class="scroll-down" address="true"></a>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="Row" id="GitHub">
+        <div class="Column_2">
+            <a href="https://github.com/Heather-Angela1" target="_blank">
+                <img src="./media/github.png" alt="Explore Github in white on a black background with simple stars, planets, and a telescope icon">
+            </a>
         </div>
-
-        <!--Video text-->
-        <div class="Video_Text">
-            <img class="Logo" src="./media/onda.png" alt="Onda Designs Logo">
-            <h1 class="white-text">heather orlemann</h1><br>
-            <div class="center"><a href="#footer">Freelance branding and design,</a><br><br>Reach out for a quote.</div>           
-            <br><br><br><br><br><br><br><br>
+        <div class="Column_1">
+            <a href="https://www.behance.net/heatherorlemann1" target="_blank">
+                <img src="./media/behance.png" alt="Colorful table filled with design templates and a drawing tablet and keyboard with the word Behance in the center." onclick="toggleForm()" ondblclick="toggleForm()">
+            </a>
         </div>
+    </div>
 
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <div class="Column_2">
-                <a href="https://github.com/Heather-Angela1" target="_blank">
-                    <img src="./media/github.png" alt="Explore Github in white on a black background with simple stars, planets, and a telescope icon">
-                </a>
-            </div>
-            <div class="Column_1">
-                <a href="https://www.behance.net/heatherorlemann1" target="_blank">
-                    <img src="./media/behance.png" alt="Colorful table filled with design templates and a drawing tablet and keyboard with the word Behance in the center." onclick="toggleForm()" ondblclick="toggleForm()"></a>
-            </div>
+    <!-- Contact form -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+             <form action="https://formspree.io/f/xayzblgo" method="POST" class="form-container"> 
+                 <h1>Contact</h1>
+                 <label for="name"><b>Name</b></label>
+                 <input type="text" id="name" placeholder="Type your name here" name="name" required>
+                 <label for="phone"><b>Phone</b></label>
+                 <input type="text" id="phone" placeholder="Type your phone number here" name="phone">
+                 <label for="email"><b>Email</b></label>		
+                 <input type="text" id="email" placeholder="Type your email address here" name="email" required>
+                 <label for="message"><b>Message</b></label>
+                 <input type="text" id="message" placeholder="Type your message here" name="message">
+
+                 <button type="submit" class="btn">SUBMIT</button>
+                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+             </form>
         </div>
+     </div>
 
-        <!-- Contact form -->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                 <form action="https://formspree.io/f/xayzblgo" method="POST" class="form-container"> 
-                     <h1>Contact</h1>
-                     <label for="name"><b>Name</b></label>
-                       <input type="text" id="name" placeholder="Type your name here" name="name" required>
-                     <label for="phone"><b>Phone</b></label>
-                       <input type="text" id="phone" placeholder="Type your phone number here" name="phone">
-                     <label for="email"><b>Email</b></label>		
-                       <input type="text" id="email" placeholder="Type your email address here" name="email" required>
-                     <label for="message"><b>Message</b></label>
-                       <input type="text" id="message" placeholder="Type your message here" name="message">
-          
-                     <button type="submit" class="btn">SUBMIT</button>
-                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                 </form>
-            </div>
-         </div>
-
-        <!--Footer section-->
-        <footer>
-            <br><br><br>
-            <p class="center" id="footer">&copy; Onda Designs</p>
-            <br>
-        </footer>
+    <!-- Footer section -->
+    <footer>
+        <br><br><br>
+        <p class="center" id="footer">&copy; Onda Designs</p>
+        <br>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
