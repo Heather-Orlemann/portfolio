@@ -39,6 +39,7 @@ h1 {
   margin-bottom: 1.5em;
   color: white;
   padding-top: 10vh;
+  text-align: center;
 }
 
 /* Paragraph elements */
@@ -89,13 +90,27 @@ img {
   max-height: 100%;
   display: block;
   margin: auto;
+  transition: filter 0.5s, transform 1s; /* Added transition property for a smoother effect */
 }
 
 /* Brings back most of the image's color when hovered over */
 img:hover {
   filter: grayscale(4%);
-  transition: transform 1s; 
   transform: scale(1.1);
+}
+
+/* Disable hover effect for the Logo */
+.Logo:hover {
+  filter: grayscale(60%);
+  transform: scale(1); /* Reset scale to 1 for no zoom effect */
+}
+
+/* Logo specific styles */
+.Logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*Styling for footer element */
@@ -216,7 +231,7 @@ footer {
   .form-container {
   max-width: 49vw;
   padding: 1vw;
-  background-color: silver;
+  background-color: #293D5B;
   }
   
   /* Input fields */
@@ -247,7 +262,7 @@ footer {
   /* Hover effect for contact and submit buttons */
   button:hover, .form-container .btn:hover {
   color: white;
-  background-color: rgb(29, 119, 29);
+  background-color: #96B3D9;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
@@ -271,7 +286,7 @@ footer {
   /* Styling for close button on hover */
   .form-container .cancel:hover {
   color: white;
-  background-color: rgb(119, 29, 119);
+  background-color: #E5F2C9;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: rgb(184,174,168);
