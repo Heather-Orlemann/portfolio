@@ -33,7 +33,6 @@ h1 {
   font-size: .88em; 
 }
 
-
 /* This is used to change the color of the Portfolio Title text */
 .white-text {
   margin-bottom: 1.5em;
@@ -121,7 +120,6 @@ footer {
 
 /***** End of General Styling *****/
 
-
 /***** Video Styling *****/
 #Typing_Video {
   position: fixed;
@@ -129,6 +127,7 @@ footer {
   bottom: 0;
   min-width: 100%;
   z-index: -1;
+  background-size: cover; /* Ensure the background image covers the entire container */
 }
 
 /* Hide video for small screens */
@@ -136,9 +135,25 @@ footer {
   #Typing_Video {
     display: none;
   }
+
+  #Typing_Photo {
+    background-image: url('./media/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+  .Video_Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better responsiveness */
+  }
 }
 
-/* Text over the video */
+/* Text styling */
 .Video_Text .Logo {
   float: left;
   margin-right: 10px; /* Adjust margin as needed for spacing */
@@ -147,14 +162,10 @@ footer {
 .Video_Text {
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 100%;
-  height: 100vh;
-  padding-top: .5vh;
-  position: relative;
-  -webkit-animation: moveVideoText 5.75s;
-  animation: moveVideoText 5.75s;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
 }
-
 
 /* Animation for moving the video text from bottom to top */
 @keyframes moveVideoText {
