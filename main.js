@@ -1,6 +1,8 @@
+// Store the form element in a variable
+const form = document.getElementById("myForm");
+
 // Toggle the contact form visibility
 function toggleForm() {
-  const form = document.getElementById("myForm");
   if (form.style.display === "block") {
     form.style.display = "none";
   } else {
@@ -10,12 +12,12 @@ function toggleForm() {
 
 // Open the contact form
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
+  form.style.display = "block";
 }
 
 // Close the contact form
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+  form.style.display = "none";
 }
 
 // Close the contact form when clicking outside the form or on the cancel button
@@ -26,9 +28,12 @@ document.addEventListener("click", function (event) {
 }, false);
 
 // Scroll down button
-$(function() {
-  $('a[href*=\\#]').on('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
