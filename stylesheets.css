@@ -12,7 +12,7 @@ body {
   opacity: 1;
   transition: 3s opacity;
   letter-spacing: 0.2vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.5vw;
   overflow-x: hidden;
   user-select: none;
@@ -26,11 +26,11 @@ body.fade-out {
 /*capitalizing all h1 headings */
 h1 {
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-top: 0;
   color: rgb(255, 255, 255);
-  font-size: .88em; 
+  font-size: 0.88em;
 }
 
 /* This is used to change the color of the Portfolio Title text */
@@ -43,8 +43,8 @@ h1 {
 
 /* Paragraph elements */
 p {
-  font-family: 'Raleway', sans-serif;
-  color: rgb(154,162,151);
+  font-family: "Raleway", sans-serif;
+  color: rgb(154, 162, 151);
   text-align: Center;
   letter-spacing: 0.1vw;
   font-size: 2vw;
@@ -125,9 +125,10 @@ footer {
   position: fixed;
   right: 0;
   bottom: 0;
+  top: 0;
   min-width: 100%;
   z-index: -1;
-  background-size: cover; /* Ensure the background image covers the entire container */
+  background-size: cover;
 }
 
 /* Hide video for small screens */
@@ -137,10 +138,10 @@ footer {
   }
 
   #Typing_Photo {
-    background-image: url('./media/background.jpg'); 
+    background-image: url("./media/background.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh;
   }
 
   .Video_Text {
@@ -148,29 +149,33 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust the width as needed */
-    max-width: 400px; /* Set a maximum width for better responsiveness */
+    width: 80%;
+    max-width: 400px;
   }
 }
 
 /* Text styling */
 .Video_Text .Logo {
   float: left;
-  margin-right: 10px; /* Adjust margin as needed for spacing */
+  margin-right: 10px;
 }
 
 .Video_Text {
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 20px;
+  padding: 0px;
   text-align: center;
   box-sizing: border-box;
 }
 
 /* Animation for moving the video text from bottom to top */
 @keyframes moveVideoText {
-  from {top: -100vw;}
-  to {top: 0vw;}
+  from {
+    top: -100vw;
+  }
+  to {
+    top: 0vw;
+  }
 }
 /***** End of Video Styling *****/
 
@@ -178,7 +183,8 @@ footer {
 * {
   box-sizing: border-box;
 }
-.Column_1, .Column_2 {
+.Column_1,
+.Column_2 {
   width: 50%;
   padding: 1.6%;
   height: 450px;
@@ -202,106 +208,115 @@ footer {
 /***** End of Table Styling *****/
 
 /***** Contact Form Styling *****/
-  /* Button used to open the contact form - fixed at the bottom of the page */
-  .Pop_Up_Button {
+/* Button used to open the contact form - fixed at the bottom of the page */
+.Pop_Up_Button {
   position: fixed;
   bottom: 1.75vw;
   right: 1.75vw;
   width: 25vw;
   background-color: white;
-  color:  rgb(154,162,151);
-  border: solid  rgb(154,162,151);
+  color: rgb(154, 162, 151);
+  border: solid rgb(154, 162, 151);
   cursor: pointer;
   -webkit-animation: movePopup 5s;
   animation: movePopup 5s;
+}
+
+/* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
+@keyframes movePopup {
+  from {
+    right: -40vw;
   }
-  
-  /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
-  @keyframes movePopup {
-  from {right: -40vw;}
-  to {right: 1.75vw;}
+  to {
+    right: 1.75vw;
   }
-  
-  @-webkit-keyframes movePopup {
-  from {right: -40vw;}
-  to {right: 1.75vw;}
+}
+
+@-webkit-keyframes movePopup {
+  from {
+    right: -40vw;
   }
-  
-  /* Styling for the contact form */
-  .form-popup {
-  font-family: 'Open Sans', sans-serif;
+  to {
+    right: 1.75vw;
+  }
+}
+
+/* Styling for the contact form */
+.form-popup {
+  font-family: "Open Sans", sans-serif;
   color: white;
   z-index: 8;
   display: none;
   position: fixed;
-  bottom: .5vw;
-  right: .5vw;
-  }
-  
-  /* Form styling */
-  .form-container {
+  bottom: 0.5vw;
+  right: 0.5vw;
+}
+
+/* Form styling */
+.form-container {
   max-width: 49vw;
   padding: 1vw;
-  background-color: #293D5B;
-  }
-  
-  /* Input fields */
-  .form-container input[type=text] {
-  font-family: 'Raleway', sans-serif;  
+  background-color: #293d5b;
+}
+
+/* Input fields */
+.form-container input[type="text"] {
+  font-family: "Raleway", sans-serif;
   color: rgb(50, 49, 57);
   width: 100%;
-  padding: .93vw;
-  margin: .6vw 0 .6vw 0;
+  padding: 0.93vw;
+  margin: 0.6vw 0 0.6vw 0;
   border: none;
   background: white;
   font-size: 1vw;
-  }
-  
-  /* General styling for all buttons */
-  button {
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(154,162,151);
-  letter-spacing: .3vw;
+}
+
+/* General styling for all buttons */
+button {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(154, 162, 151);
+  letter-spacing: 0.3vw;
   font-size: 1.5vw;
   font-weight: bold;
   padding: 1.5vw;
   cursor: pointer;
   width: 100%;
   height: auto;
-  }
-  
-  /* Hover effect for contact and submit buttons */
-  button:hover, .form-container .btn:hover {
+}
+
+/* Hover effect for contact and submit buttons */
+button:hover,
+.form-container .btn:hover {
   color: white;
-  background-color: #96B3D9;
+  background-color: #96b3d9;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   border-color: silver;
-  }
-  
-  /* Submit button */
-  .form-container .btn {
+}
+
+/* Submit button */
+.form-container .btn {
   background-color: white;
-  color:  rgb(154,162,151);
-  border-color:  rgb(154,162,151);
+  color: rgb(154, 162, 151);
+  border-color: rgb(154, 162, 151);
   margin-bottom: 1vh;
-  }
-  
-  /* Close button */
-  .form-container .cancel {
+}
+
+/* Close button */
+.form-container .cancel {
   background-color: silver;
   color: white;
   border-color: gray;
-  }
-  
-  /* Styling for close button on hover */
-  .form-container .cancel:hover {
+}
+
+/* Styling for close button on hover */
+.form-container .cancel:hover {
   color: white;
-  background-color: #E5F2C9;
+  background-color: #e5f2c9;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
-  border-color: rgb(184,174,168);
-  }
+  border-color: rgb(184, 174, 168);
+}
 /***** End of Contact Form Styling *****/
 
 /***** Scroll Down Styling *****/
@@ -314,13 +329,13 @@ footer {
   display: block;
   width: 32px;
   height: 32px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 1000;
   opacity: 1;
-  -webkit-transition: all .2s ease-in, opacity .5s ease-in 3s;
-  transition: all .2s ease-in, opacity .5s ease-in 3s;
+  -webkit-transition: all 0.2s ease-in, opacity 0.5s ease-in 3s;
+  transition: all 0.2s ease-in, opacity 0.5s ease-in 3s;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
 }
@@ -339,7 +354,11 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -415,42 +434,40 @@ footer {
 
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
   p {
-      font-size: 1.125vw;
+    font-size: 1.125vw;
   }
 }
 
 @media screen and (min-width: 2270px) {
   p {
-      font-size: 1.0125vw;
+    font-size: 1.0125vw;
   }
 }
 
 /* Media rules to enlarge the font of the white text for smaller screens */
 @media screen and (max-width: 1080px) {
-  .quote{
-      font-size: 3.5vw;
+  .quote {
+    font-size: 3.5vw;
   }
 
   .white-text {
-      font-size: 4.5vw;
+    font-size: 4.5vw;
   }
 }
 
 /* Media rules to increase the size of the columns for larger screens */
 @media screen and (min-width: 1725px) {
   .Column_1 {
-      height: 550px;
+    height: 550px;
   }
   .Column_2 {
-      height: 550px;
+    height: 550px;
   }
 }
 
-
-
 /*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
 @media screen and (min-width: 2000px) {
-  h1{
-      margin-top: 0;
+  h1 {
+    margin-top: 0;
   }
 }
